@@ -8,7 +8,7 @@ module CepLivre
     include HTTParty
     
     def self.find(cep, format)
-      self.get("http://ceplivre.com.br/consultar/cep/#{CepLivre::Configuration.key}/#{cep}/#{format}")
+      self.get("http://ceplivre.com.br/consultar/cep/#{CepLivre::Configuration.key}/#{cep}/#{format}")["cep"]
     end
   end
 end
