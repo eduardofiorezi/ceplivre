@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe "CepLivre" do
   before do
-    CepLivre::Configuration.key = "bf83014edf60097546fb077b0b99264c" #add a test key
+    CepLivre::Configuration.key = "" #add a test key
   end
   
   describe "find_cep" do
