@@ -5,11 +5,11 @@ require "ceplivre/version"
 Gem::Specification.new do |s|
   s.name        = "ceplivre"
   s.version     = Ceplivre::VERSION
-  s.authors     = ["Eduardo Fiorezi"]
-  s.email       = ["eduardofiorezi@gmail.com"]
+  s.authors     = ["Eduardo Fiorezi", "Felipe Bazzarella"]
+  s.email       = ["eduardofiorezi@gmail.com", "fbazzarella@gmail.com"]
   s.homepage    = "http://hooppe.com"
-  s.summary     = %q{Gem para utilizar a api ceplivre}
-  s.description = %q{Utilize a API ceplivre na sua aplicação}
+  s.summary     = %q{Gem para utilizar a API ceplivre}
+  s.description = %q{Utilize a API ceplivre na sua aplicação Ruby e Rails}
 
   s.rubyforge_project = "ceplivre"
 

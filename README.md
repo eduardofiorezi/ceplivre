@@ -1,10 +1,10 @@
 # Cep Livre GEM
 
-Lib criada para facilitar a busca de cep em qualquer aplicação ruby/rails que queria utiliza a api de ceps do serviço ceplivre.com
+Lib para facilitar a busca de CEP e Logradouro em qualquer aplicação Ruby e Rails que queira utilizar a API do serviço ceplivre.com.br
 
 ## Compatibilidade
 
-* Testada com Ruby 1.9.2 e aplicativos rails 3.1
+* Testada com Ruby 1.9.2 e aplicações Rails 3.1
 
 ## Instalação
 
@@ -14,28 +14,33 @@ Adicione ao arquivo Gemfile da sua aplicação:
 	
 	gem "ceplivre"
 	
-e execute o comando
+e execute o comando:
 
 	bundle install
 	
 ### Crie um arquivo de configuração
 
-Crie um arquivo de configuração na sua aplicação rails config/initializers/ceplivre.rb e coloque a seguinte linha com sua chave de configuracão:
+Crie um arquivo de configuração na sua aplicação (config/initializers/ceplivre.rb) com sua chave da API:
 
-	CepLivre::Configuration.key = "Key recebida do cep livre"
+	CepLivre::Configuration.key = "Chave da API"
 
 ## Como utilizar
 
-Basta utilizar o commando a seguir:
+Para pesquisar por CEP:
 
 	CepLivre::Cep.find("22030-030", :json)
+	
+Para pesquisar por Logradouro:
+
+	CepLivre::Logradouro.find("Nossa Senhora de Copacabana", :json)
 	
 
 ## Contribuição
 
-Para contribuir basta enviar um pull request com seus devidos specs.
+Para contribuir, basta enviar um Pull Request com seus devidos testes.
 
 
 ## Créditos
 
-*Eduardo Fiorezi - [hooppe.com](http://hooppe.com)
+* Eduardo Fiorezi - [hooppe.com](http://hooppe.com)
+* Felipe Bazzarella - [bazzarella.com](http://bazzarella.com)
