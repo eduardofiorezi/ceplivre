@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe "CepLivre::Configuration" do
-  before do
+  before :all do
     CepLivre::Configuration.key = nil
   end
   
@@ -13,7 +13,7 @@ describe "CepLivre::Configuration" do
   it "should set a key for ceplivre api" do
     key_to_test = "122345677009212"
     
-   CepLivre::Configuration.key = key_to_test
-   CepLivre::Configuration.key.should == key_to_test
+    CepLivre::Configuration.key = key_to_test
+    CepLivre::Configuration.key.should == key_to_test
   end
 end
